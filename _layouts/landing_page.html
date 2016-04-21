@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+	<link rel="stylesheet" id="bootstrap3-css" href="/css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ieeebootstrap3-css" href="/css/ieeebootstrap.css" type="text/css" media="all">
+
+	<!--[if lt IE 9]>
+	  <script src="http://sites.ieee.org/isgt-2016/wp-content/themes/ieeewptheme-2/js/html5shiv.js"></script>
+	  <script src="http://sites.ieee.org/isgt-2016/wp-content/themes/ieeewptheme-2/js/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="/css/green-white.css" type="text/css" media="all">
+</head>
+
+<body class="home page page-id-11 page-template-default group-blog" ontouchstart="">
+
+	{% include header_landing_page.html %}
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron banner">
+		<div class="container">
+			<div class="pull-right hidden-xs">
+				<a href="http://www.ieee.org" title="IEEE logo">
+					<img src="/images/ieee_mb_white.png" id="ieee_mb" class="img-responsive" alt="IEEE logo">
+			</a>
+		</div>
+			<a href="http://sites.ieee.org/isgt-2016/" title="IEEE ISGT 2016 home"><img src="/images/cropped-new-banner.jpg" alt="IEEE ISGT 2016 home" class="img-responsive" rel="home" width="1125" height="300"></a>
+			<h1 class="site-title"><a href="http://sites.ieee.org/isgt-2016/" rel="home">IEEE ISGT 2016</a></h1>
+
+		</div>
+	</div>
+
+	<div class="container search">
+		<div class="row">
+		  <div class="col-sm-6">
+			</div>
+			<!-- social media icons go here -->
+			<div class="col-sm-6">
+					<div class="pull-right">
+					<!-- add dynamic social media icon code to placeholder -->
+					<ul class="social-icons">
+						<li>
+							<a href="https://www.facebook.com/ieeePES" title="Visit us on Facebook"><img src="http://sites.ieee.org/isgt-2016/wp-content/themes/ieeewptheme-2/images/social/facebook-icon.png" alt="Visit us on Facebok"><span class="sr-only">Facebook</span></a>
+						</li>
+						<li>
+						</li>
+						<li>
+                    		<a href="https://twitter.com/search?q=%23PESISGT" title="Follow us on Twitter"><img src="http://sites.ieee.org/isgt-2016/wp-content/themes/ieeewptheme-2/images/social/twitter-icon.png" alt="Follow us on Twitter"><span class="sr-only">Twitter</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- NAVBAR
+	================================================== -->
+	<nav class="navbar-wrapper">
+		<div class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<a class="skip-link sr-only" href="#content">Skip to content</a>
+				<div class="collapse navbar-collapse">
+					<ul id="menu-program1" class="nav navbar-nav">
+						<li id="menu-item-1846" class="menu-item current-menu-item">
+							<a href="http://sites.ieee.org/isgt-2016/">Home</a>
+						</li>
+						<li id="menu-item-1864" class="menu-item">
+							<a href="http://sites.ieee.org/isgt-2016/program2/">Program</a>
+						</li>
+						<li id="menu-item-1867" class="menu-item">
+							<a href="http://sites.ieee.org/isgt-2016/keynoteplenary/">Keynote/Plenary</a>
+						</li>
+						<li id="menu-item-1868" class="menu-item">
+							<a href="http://sites.ieee.org/isgt-2016/panels/">Panels</a>
+						</li>
+						<li id="menu-item-1869" class="menu-item">
+							<a href="http://sites.ieee.org/isgt-2016/papers/">Papers</a>
+						</li>
+						<li id="menu-item-1875" class="menu-item">
+							<a href="http://sites.ieee.org/isgt-2016/posters/">Posters</a>
+						</li>
+						<li id="menu-item-1874" class="menu-item">
+							<a href="http://sites.ieee.org/isgt-2016/tutorials-2/">Tutorials</a>
+						</li>
+						<li id="menu-item-1871" class="menu-item">
+							<a href="http://sites.ieee.org/isgt-2016/support-isgt2015-link/">Support ISGT2016</a>
+						</li>
+						<li id="menu-item-1847" class="menu-item">
+							<a href="http://sites.ieee.org/isgt-2016/contact/">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div id="content" class="site-content">
+		<div id="primary" class="container page-content">
+			<header class="post-header">
+				<h1 class="post-title">{{ page.title }}</h1>
+			</header>
+
+			{{ content }}
+		</div>
+	</div> <!-- end .site-content -->
+
+	<div class="the-wedge-bottom"></div>
+
+	<div class="jumbotron footer">
+	<!-- FOOTER -->
+		{% include footer_landing_page.html %}
+	</div><!-- /.container -->
+
+</body>
+</html>
