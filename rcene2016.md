@@ -6,10 +6,11 @@ redirect_from: "/rcene-2016/"
 ---
 
 ---
-###### Honorary Chairs
+
+#### Honorary Chairs
 H.E Dr. Romny Om, ITC, Cambodia
 
-###### Steering Committees
+#### Steering Committees
 - Prof. Ohgaki Hideaki, Kyoto, Japan
 - Prof. Ishihara Keiichi, Kyoto, Japan
 - Prof. Tanimoto Jun, Kyushu, Japan
@@ -18,7 +19,7 @@ H.E Dr. Romny Om, ITC, Cambodia
 - Dr. Chaiwat Nuthong, KMITL, Thailand
 - Dr. Bun Long, ITC, Cambodia
 
-###### Organizing Committees
+#### Organizing Committees
 - Dr. Thavarith Chunhieng, ITC, Cambodia
 - Dr. Sopheak Rey, ITC, Cambodia
 - Dr. Sarin Chan, ITC, Cambodia
@@ -29,11 +30,12 @@ H.E Dr. Romny Om, ITC, Cambodia
 - Mr. Pharino Chum, ITC, Cambodia
 - Mr. Chanthan Hel, ITC, Cambodia
 
-###### Organized by
+#### Organized by
   Institute of Technology of Cambodia
 
-###### Co-organized by
+#### Co-organized by
   SEE Forum
+
 ---
 
 **RCEnE** is the Regional Conference on Energy Engineering supported by JICA Project on AUN/SEED-Net. This regional conference is intended as a Regional Forum in ASEAN Region for academicians, engineers, researchers and professionals from industry to discuss their research results, innovative knowledges, and breakthroughs in Energy Engineering Technology.
