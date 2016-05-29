@@ -1,5 +1,5 @@
 ---
-layout: landing_page
+layout: rcene_layout
 title: RCENE 2016
 permalink: /RCENE-2016/
 redirect_from: "/rcene-2016/"
