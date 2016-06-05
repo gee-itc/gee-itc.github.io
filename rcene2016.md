@@ -10,10 +10,11 @@ redirect_from: "/rcene-2016/"
 
 ---
 
-#### Honorary Chairs
-H.E Dr. Romny Om, ITC, Cambodia
+### Honorary Chairs
 
-#### Steering Committees
+#### H.E Dr. Romny Om, ITC, Cambodia
+
+### Steering Committees
 - Prof. Ohgaki Hideaki, Kyoto, Japan
 - Prof. Ishihara Keiichi, Kyoto, Japan
 - Prof. Tanimoto Jun, Kyushu, Japan
@@ -22,7 +23,7 @@ H.E Dr. Romny Om, ITC, Cambodia
 - Dr. Chaiwat Nuthong, KMITL, Thailand
 - Dr. Bun Long, ITC, Cambodia
 
-#### Organizing Committees
+### Organizing Committees
 - Dr. Thavarith Chunhieng, ITC, Cambodia
 - Dr. Sopheak Rey, ITC, Cambodia
 - Dr. Sarin Chan, ITC, Cambodia
@@ -33,11 +34,13 @@ H.E Dr. Romny Om, ITC, Cambodia
 - Mr. Pharino Chum, ITC, Cambodia
 - Mr. Chanthan Hel, ITC, Cambodia
 
-#### Organized by
-  Institute of Technology of Cambodia
+### Organized by:
 
-#### Co-organized by
-  SEE Forum
+####  Institute of Technology of Cambodia
+
+### Co-organized by:
+
+####  SEE Forum
 
 ---
 

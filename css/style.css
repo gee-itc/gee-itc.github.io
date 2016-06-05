@@ -11,19 +11,6 @@ Tags: light, dark, flexible-width, theme-options, post-formats, rtl-language-sup
 */
 
 @charset "utf-8";
-@import url('css/post-gallery.css');
-@font-face {
-    font-family: Gotham_Bold;
-    src: url('css/fonts/Gotham_medium.ttf'), url('css/fonts/Gotham_medium.ttf');
-    /* IE9 */
-}
-@font-face {
-    font-family: "custom_x";
-    src: url("css/fonts/x.eot");
-    src: url("css/fonts/x.eot?#iefix") format("embedded-opentype"), url("css/fonts/x.ttf") format("truetype"), url("css/fonts/x.svg#untitled-font-1") format("svg"), url("css/fonts/x.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* -------------------------
 	Base CSS
@@ -41,7 +28,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: 'Lato', sans-serif;
 }
 h1, h2, h3, .heading, .firstword h1 span, .firstword h2 span, .firstword h3 span, h1 a, h2 a, h3 a, h1 a:hover, h2 a:hover, h3 a:hover {
-    font-family: Gotham_Bold;
+    font-family: 'Roboto', sans-serif;
     color: #323232;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
@@ -218,7 +205,7 @@ iframe {
     z-index: -1;
 }
 .body-top-color {
-    background-color: rgba(255, 255, 255, 1);
+    background: transparent;
     position: absolute;
     top: 0;
     left: 0;
@@ -228,7 +215,7 @@ iframe {
 }
 .dotted {
     height: 1px;
-    background: url(images/dotted-line.png) repeat-x;
+    background: url(/images/dotted-line.png) repeat-x;
 }
 .bookmark {
     position: relative;
@@ -307,7 +294,7 @@ a.icon-social:hover {
     padding-right: 8px;
     padding-left: 3px;
     font-weight: 300;
-    font-family: Gotham_Bold;
+    font-family: 'Roboto', sans-serif;
 }
 br.nc {
     display: none
@@ -514,7 +501,7 @@ body.boxed #navigation.pos_fixed_nav .nav-bottom {
     z-index: -2;
 }
 #nav-bottom .shadow {
-    background: url(images/navigation-shadow.png) repeat-x;
+    background: url(/images/navigation-shadow.png) repeat-x;
     background-size: 100% 100%;
     position: absolute;
     bottom: -30px;
@@ -1379,7 +1366,7 @@ body.boxed #navigation.pos_fixed_nav .nav-bottom {
     color: #ffffff;
     font-size: 16px;
     font-weight: normal;
-    font-family: Gotham_Bold;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0
 }
@@ -1750,7 +1737,7 @@ table td {
 }
 .table-soid tr:first-child td {
     color: #e23e38;
-    font-family: Gotham_Bold;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: left;
     border-left: 1px solid #d6d6d6;
@@ -1776,7 +1763,7 @@ table td {
 }
 .table-transparent tr:first-child td {
     color: #e23e38;
-    font-family: Gotham_Bold;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: left;
     padding: 18px 16px;
@@ -4570,13 +4557,13 @@ nextcl a:hover span {
     padding: 2px 9px 2px 5px;
 }
 .blog-listing .double-dotted {
-    background: url(images/dotted-line.png) left bottom repeat-x;
+    background: url(//images/dotted-line.png) left bottom repeat-x;
     margin: 0;
     width: 100%;
     height: 10px
 }
 .blog-listing .double-dotted .inner {
-    background: url(images/dotted-line.png) repeat-x;
+    background: url(//images/dotted-line.png) repeat-x;
     margin: 0px 0 20px 0;
     width: 100%;
     height: 1px
@@ -4952,13 +4939,13 @@ nextcl a:hover span {
     font-size: 16px
 }
 .search-list .double-dotted {
-    background: url(images/dotted-line.png) bottom repeat-x;
+    background: url(/images/dotted-line.png) bottom repeat-x;
     margin: 0px 0 25px 0;
     width: 100%;
     height: 10px
 }
 .search-list .double-dotted .inner {
-    background: url(images/dotted-line.png) repeat-x;
+    background: url(/images/dotted-line.png) repeat-x;
     margin: 0px 0 20px 0;
     width: 100%;
     height: 1px
@@ -5196,9 +5183,9 @@ body.home .single-post-body {
 .single-post h2.post-title.no-feature-image {
     margin-top: -1px
 }
-.single-post h3, .page h3 {
+/*.single-post h3, .page h3 {
     font-size: 16px
-}
+}*/
 .single-post p, .page p {
     margin-bottom: 20px;
     line-height: 1.6em
@@ -5207,7 +5194,7 @@ body.home .single-post-body {
     margin-bottom: 30px
 }
 .single-post .post-meta, .page .post-meta {
-    background: url(images/dotted-line.png) repeat-x top;
+    background: url(/images/dotted-line.png) repeat-x top;
     width: 100%;
     padding: 7px 0 0 0;
     margin-bottom: 30px;
@@ -5216,7 +5203,7 @@ body.home .single-post-body {
 }
 .single-post .post-meta .inner, .page .post-meta .inner {
     width: 100%;
-    background: url(images/dotted-line.png) repeat-x bottom;
+    background: url(/images/dotted-line.png) repeat-x bottom;
     padding: 0 0 7px 0
 }
 .single-post .post-meta .rt-tags, .page .post-meta .rt-tags {
@@ -5364,7 +5351,7 @@ blockquote p {
     margin-left: 40px
 }
 article.comment {
-    background: url(images/dotted-line.png) repeat-x bottom;
+    background: url(/images/dotted-line.png) repeat-x bottom;
     padding-bottom: 20px;
     margin-bottom: 14px
 }
@@ -6039,13 +6026,13 @@ body.dark ol.vcalendar > li:before, body.dark .tribe-venue-widget-list li:before
     padding-bottom: 20px;
 }
 #tribe-events-mobile-template .double-dotted {
-    background: url(images/dotted-line.png) left bottom repeat-x;
+    background: url(/images/dotted-line.png) left bottom repeat-x;
     margin: 0;
     width: 100%;
     height: 10px
 }
 #tribe-events-mobile-template .double-dotted .inner {
-    background: url(images/dotted-line.png) repeat-x;
+    background: url(/images/dotted-line.png) repeat-x;
     margin: 0px 0 40px 0;
     width: 100%;
     height: 1px
