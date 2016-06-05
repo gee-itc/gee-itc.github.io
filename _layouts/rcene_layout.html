@@ -7,9 +7,11 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>RCENE 2016</title>
+        <title>
+            {% if page.title %}{{ page.title }}
+            {% else %}{{ site.title }}{% endif %}
+        </title>
         <link rel="profile" href="http://gmpg.org/xfn/11"/>
-        <link rel="pingback" href="http://rcenethermofluid2015.ugm.ac.id/demo/xmlrpc.php"/>
         <link rel="shortcut icon" href="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/uploads/2015/04/favicon1.png">
         <!--[if lt IE 9]> <script src="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/html5.js" type="text/javascript"></script> <![endif]-->
         <script type="text/javascript">
@@ -36,18 +38,20 @@
         </style>
 
         <!-- start SEO -->
-        <meta name="description" content="3rd AUN/SEED-Net Regional Conference of Energy Engineering"/>
-        <meta name="keywords" content="rcene thermofluid, rcene , rcene thermofluid 2015, senamm, rceme, thermofluid, teknik mesin, machine engineering, UGM"/>
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
+        <meta name="keywords" content="{{ page.tags }}"/>
         <meta property='og:locale' content='en_US'/>
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml" | prepend: site.baseurl | prepend: site.url }}">
         <!-- endSEO -->
 
         <link rel='stylesheet' id='mbpro-font-awesome-css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' type='text/css' media='all'/>
         <link rel='stylesheet' id='google-font-css' href='//fonts.googleapis.com/css?family=Roboto%7CRoboto%7CRoboto&#038;ver=4.1.11' type='text/css' media='all'/>
         <link rel='stylesheet' id='bootstrap-css' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css' type='text/css' media='all'/>
         <link rel='stylesheet' id='bootstrap-responsive-css' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap-responsive.min.css' type='text/css' media='all'/>
-        <link rel='stylesheet' id='gameplan-style-css' href='/css/style.css' type='text/css' media='all'/>
-        <link rel='stylesheet' id='icon-effect-css' href='/css/icon-effect.css' type='text/css' media='all'/>
-        <link rel='stylesheet' id='js_composer_front-css' href='/css/js_composer.css' type='text/css' media='all'/>
+        <link rel='stylesheet' id='gameplan-style-css' href='{{ "/css/style.css" | prepend: site.baseurl }}' type='text/css' media='all'/>
+        <link rel='stylesheet' id='icon-effect-css' href='{{ "/css/icon-effect.css" | prepend: site.baseurl }}' type='text/css' media='all'/>
+        <link rel='stylesheet' id='js_composer_front-css' href='{{ "/css/js_composer.css" | prepend: site.baseurl }}' type='text/css' media='all'/>
         <style type="text/css">
             #gototop:before {
                 content: "\f062";
@@ -364,6 +368,9 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="vc_empty_space" style="height: 32px">
+                                                <span class="vc_empty_space_inner"></span>
+                                            </div>
                                             <div class="vc_row-full-width"></div>
                                             <div class="vc_row wpb_row vc_inner vc_row-fluid">
                                                 <div class="vc_col-sm-8 wpb_column vc_column_container ">
@@ -371,7 +378,7 @@
 
                                                         <div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_appear">
                                                             <div class="wpb_wrapper">
-                                                                <h1>International Conference on Thermofluids &amp; The Regional Conference on Energy Engineering</h1>
+                                                                <h1>{{ page.title }}</h1>
 
                                                             </div>
                                                         </div>
@@ -387,425 +394,257 @@
                                                         <div class="vc_empty_space" style="height: 32px">
                                                             <span class="vc_empty_space_inner"></span>
                                                         </div>
-
                                                         <div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_appear">
                                                             <div class="wpb_wrapper">
-                                                                <p>The Department of Mechanical and Industrial Engineering of Gadjah Mada University in collaboration with AUN/SEED-NET and JICA proudly present the 2015 Regional Conference on Energy Engineering (RCEnE) in conjunction with 7th International
-                                                                    Conference of Thermofluids (THERMOFLUID). RCEnE provides a global platform to bring together researchers, scientists, academics, policy makers and professionals to exchange information and identify research needs in the areas of energy engineering.
-                                                                    The annual THERMOFLUID focuses on the fields of fluid and thermal engineering and sciences. Conjoining these two conferences creates a forum for knowledge sharing of a wealth of information in both fundamental and applied sciences.</p>
-
+                                                                {{ content }}
                                                             </div>
                                                         </div>
                                                         <div class="vc_empty_space" style="height: 32px">
                                                             <span class="vc_empty_space_inner"></span>
                                                         </div>
 
-                                                        <div style="margin-top:10px;margin-bottom:10px;height:1px;line-height:0px">
-                                                            <!-- padding element -->
-                                                        </div>
-                                                        <a class="wpb_button_a" title="Read More" href="http://rcenethermofluid2015.ugm.ac.id/demo/?page_id=14">
-                                                            <span class="wpb_button  wpb_btn-primary wpb_regularsize wpb_arrow">Read More
-                                                                <i class="icon"></i>
+                                                        <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey">
+                                                            <span class="vc_sep_holder vc_sep_holder_l">
+                                                                <span class="vc_sep_line"></span>
                                                             </span>
-                                                        </a>
+                                                            <span class="vc_sep_holder vc_sep_holder_r">
+                                                                <span class="vc_sep_line"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="vc_col-sm-4 wpb_column vc_column_container ">
+                                                    <div class="wpb_wrapper">
+
+                                                        <div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_appear">
+                                                            <div class="wpb_wrapper">
+                                                                <h1>Important Dates</h1>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey">
+                                                            <span class="vc_sep_holder vc_sep_holder_l">
+                                                                <span class="vc_sep_line"></span>
+                                                            </span>
+                                                            <span class="vc_sep_holder vc_sep_holder_r">
+                                                                <span class="vc_sep_line"></span>
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="vc_empty_space" style="height: 60px">
+                                                            <span class="vc_empty_space_inner"></span>
+                                                        </div>
+
+                                                        <div class="wpb_content_element  wpb_appear wpb_animate_when_almost_visible not-column-inherit">
+                                                            <div class="wpb_wrapper wpb_accordion_wrapper ui-helper-reset ui-accordion boxed timeline-list">
+                                                                <div class="timeline" id="tl788866359">
+                                                                    <div class="row-fluid">
+                                                                        <div class="col1"></div>
+                                                                        <div class="col11">
+                                                                            <span class="dot">
+                                                                                <span></span>
+                                                                            </span>
+                                                                            <span class="line"></span>
+                                                                            <span class="title">Extended abstract submission deadline</span>
+                                                                            <span class="content">June 03, 2016</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="timeline" id="tl1561180050">
+                                                                    <div class="row-fluid">
+                                                                        <div class="col1"></div>
+                                                                        <div class="col11">
+                                                                            <span class="dot">
+                                                                                <span></span>
+                                                                            </span>
+                                                                            <span class="line"></span>
+                                                                            <span class="title">Paper acceptance notification</span>
+                                                                            <span class="content">July 4, 2016</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="timeline" id="tl1647710097">
+                                                                    <div class="row-fluid">
+                                                                        <div class="col1"></div>
+                                                                        <div class="col11">
+                                                                            <span class="dot">
+                                                                                <span></span>
+                                                                            </span>
+                                                                            <span class="line"></span>
+                                                                            <span class="title">Full paper submission deadline</span>
+                                                                            <span class="content">September 2, 2016</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="timeline" id="tl87120121">
+                                                                    <div class="row-fluid">
+                                                                        <div class="col1"></div>
+                                                                        <div class="col11">
+                                                                            <span class="dot">
+                                                                                <span></span>
+                                                                            </span>
+                                                                            <span class="line"></span>
+                                                                            <span class="title">Conference dates</span>
+                                                                            <span class="content">November 24-25, 2016</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <div class="vc_empty_space" style="height: 32px">
                                                             <span class="vc_empty_space_inner"></span>
                                                         </div>
 
                                                         <div class="wpb_text_column wpb_content_element ">
                                                             <div class="wpb_wrapper">
-                                                                <p>
-                                                                    <a href="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/uploads/2015/04/AIP-BANNER.png"><img src="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/uploads/2015/04/AIP-BANNER-300x40.png" alt="AIP BANNER AIP BANNER AIP BANNER" width="300" height="40" class="alignnone size-medium wp-image-315" title="Home Home"></a>
-                                                                </p>
-                                                                <p>All accepted full papers will be published inThe AIP Conference Proceedings Journal indexed by Elsevier SCOPUS (www.scopus.com), and SJR (www.scimagojr.com) with an SJR index of 0.15 and H index of 34.</p>
+                                                                <p font-size="12">* Note</p>
 
-                                                            </div>
-                                                        </div>
-                                                        <div class="vc_empty_space" style="height: 32px">
-                                                            <span class="vc_empty_space_inner"></span>
-                                                        </div>
-
-                                                        <div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_appear">
-                                                            <div class="wpb_wrapper">
-                                                                <h1 style="text-align: left;">REGISTRATION FEES</h1>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey">
-                                                            <span class="vc_sep_holder vc_sep_holder_l">
-                                                                <span class="vc_sep_line"></span>
-                                                            </span>
-                                                            <span class="vc_sep_holder vc_sep_holder_r">
-                                                                <span class="vc_sep_line"></span>
-                                                            </span>
-                                                        </div>
-
-                                                        <div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_appear">
-                                                            <div class="wpb_wrapper">
-                                                                <p style="text-align: center;">
-                                                                    <div class="table-responsive">
-                                                                        <table style="width:100%; " class="easy-table easy-table-default " border="0">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th >Category</th>
-                                                                                    <th >
-                                                                                        Registration Fee</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td >Non-Paper Participant (Local)</td>
-                                                                                    <td >
-                                                                                        1.250.000 IDR</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td >Paper Participant-Students (Local)</td>
-                                                                                    <td >
-                                                                                        1.250.000 IDR</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td >Paper Participant (Local)
-                                                                                    </td>
-                                                                                    <td >
-                                                                                        1.750.000 IDR</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td >Industry
-                                                                                    </td>
-                                                                                    <td >
-                                                                                        2.750.000 IDR</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td >International Participant (early bird)</td>
-                                                                                    <td >
-                                                                                        $200 USD (valid until 7th November 2015)</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td >International Participant</td>
-                                                                                    <td >
-                                                                                        $300 USD</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td >Additional Paper</td>
-                                                                                    <td >
-                                                                                        +50% Registration Fee</td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="vc_empty_space" style="height: 32px">
-                                                                <span class="vc_empty_space_inner"></span>
-                                                            </div>
-
-                                                            <div class="vc_button-2-wrapper vc_button-2-align-center">
-                                                                <a class="vc_btn vc_btn_blue vc_btn-blue vc_btn_lg vc_btn-lg vc_btn_rounded" href="http://rcenethermofluid2015.ugm.ac.id/demo/registration/" title="Registration" target="">REGISTER NOW</a>
-                                                            </div>
-                                                            <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey">
-                                                                <span class="vc_sep_holder vc_sep_holder_l">
-                                                                    <span class="vc_sep_line"></span>
-                                                                </span>
-                                                                <span class="vc_sep_holder vc_sep_holder_r">
-                                                                    <span class="vc_sep_line"></span>
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey">
-                                                                <span class="vc_sep_holder vc_sep_holder_l">
-                                                                    <span class="vc_sep_line"></span>
-                                                                </span>
-                                                                <span class="vc_sep_holder vc_sep_holder_r">
-                                                                    <span class="vc_sep_line"></span>
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="wpb_single_image wpb_content_element vc_align_center">
-                                                                <div class="wpb_wrapper">
-
-                                                                    <a href="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/uploads/2015/04/rcene3-1024x379.png" target="_blank">
-                                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="900" height="333" src="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/uploads/2015/04/rcene3-1024x379.png" class="vc_single_image-img attachment-large" alt="rcene3"/></div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="vc_col-sm-4 wpb_column vc_column_container ">
-                                                        <div class="wpb_wrapper">
-
-                                                            <div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_appear">
-                                                                <div class="wpb_wrapper">
-                                                                    <h1>IMPORTANT DATES</h1>
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey">
-                                                                <span class="vc_sep_holder vc_sep_holder_l">
-                                                                    <span class="vc_sep_line"></span>
-                                                                </span>
-                                                                <span class="vc_sep_holder vc_sep_holder_r">
-                                                                    <span class="vc_sep_line"></span>
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="vc_empty_space" style="height: 60px">
-                                                                <span class="vc_empty_space_inner"></span>
-                                                            </div>
-
-                                                            <div class="wpb_content_element  wpb_appear wpb_animate_when_almost_visible not-column-inherit">
-                                                                <div class="wpb_wrapper wpb_accordion_wrapper ui-helper-reset ui-accordion boxed timeline-list">
-                                                                    <div class="timeline" id="tl788866359">
-                                                                        <div class="row-fluid">
-                                                                            <div class="col1"></div>
-                                                                            <div class="col11">
-                                                                                <span class="dot">
-                                                                                    <span></span>
-                                                                                </span>
-                                                                                <span class="line"></span>
-                                                                                <span class="title">Submission of Abstract (extended)</span>
-                                                                                <span class="content">August 30, 2015</span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="timeline" id="tl1561180050">
-                                                                        <div class="row-fluid">
-                                                                            <div class="col1"></div>
-                                                                            <div class="col11">
-                                                                                <span class="dot">
-                                                                                    <span></span>
-                                                                                </span>
-                                                                                <span class="line"></span>
-                                                                                <span class="title">Author Notification of Abstract Acceptance</span>
-                                                                                <span class="content">September 5, 2015</span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="timeline" id="tl1647710097">
-                                                                        <div class="row-fluid">
-                                                                            <div class="col1"></div>
-                                                                            <div class="col11">
-                                                                                <span class="dot">
-                                                                                    <span></span>
-                                                                                </span>
-                                                                                <span class="line"></span>
-                                                                                <span class="title">Submission of Full-Length Draft Paper *</span>
-                                                                                <span class="content">September 15, 2015</span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="timeline" id="tl87120121">
-                                                                        <div class="row-fluid">
-                                                                            <div class="col1"></div>
-                                                                            <div class="col11">
-                                                                                <span class="dot">
-                                                                                    <span></span>
-                                                                                </span>
-                                                                                <span class="line"></span>
-                                                                                <span class="title">Paper Acceptance</span>
-                                                                                <span class="content">October 15, 2015</span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="timeline" id="tl1324303103">
-                                                                        <div class="row-fluid">
-                                                                            <div class="col1"></div>
-                                                                            <div class="col11">
-                                                                                <span class="dot">
-                                                                                    <span></span>
-                                                                                </span>
-                                                                                <span class="line"></span>
-                                                                                <span class="title">Early Bird Registration</span>
-                                                                                <span class="content">
-                                                                                    <s>October 30, 2015</s><br>
-                                                                                    November 7, 2015</span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="timeline" id="tl997531569">
-                                                                        <div class="row-fluid">
-                                                                            <div class="col1"></div>
-                                                                            <div class="col11">
-                                                                                <span class="dot">
-                                                                                    <span></span>
-                                                                                </span>
-                                                                                <span class="line"></span>
-                                                                                <span class="title">Registration / Camera Ready</span>
-                                                                                <span class="content">November 12, 2015</span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="timeline" id="tl1025776878">
-                                                                        <div class="row-fluid">
-                                                                            <div class="col1"></div>
-                                                                            <div class="col11">
-                                                                                <span class="dot">
-                                                                                    <span></span>
-                                                                                </span>
-                                                                                <span class="line"></span>
-                                                                                <span class="title">Conference</span>
-                                                                                <span class="content">November 19-20, 2015</span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="vc_empty_space" style="height: 32px">
-                                                                <span class="vc_empty_space_inner"></span>
-                                                            </div>
-
-                                                            <div class="wpb_text_column wpb_content_element ">
-                                                                <div class="wpb_wrapper">
-                                                                    <p font-size="12">* Authors who do not wish to publish a full paper conference submission may instead submit an extended abstract up to this date</p>
-
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="vc_row-full-width"></div>
-                                                <div class="wpb_single_image wpb_content_element wpb_animate_when_almost_visible wpb_appear vc_align_center">
-                                                    <div class="wpb_wrapper">
+                                            </div>
+                                            <div class="vc_row-full-width"></div>
+                                            <div class="wpb_single_image wpb_content_element wpb_animate_when_almost_visible wpb_appear vc_align_center">
+                                                <div class="wpb_wrapper">
 
-                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="900" height="171" src="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/uploads/2015/04/SPONSOR_001-1024x195.png" class="vc_single_image-img attachment-large" alt="SPONSOR_001"/></div>
-                                                    </div>
+                                                    <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="900" height="171" src="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/uploads/2015/04/SPONSOR_001-1024x195.png" class="vc_single_image-img attachment-large" alt="SPONSOR_001"/></div>
                                                 </div>
-                                                <div class="vc_empty_space" style="height: 32px">
-                                                    <span class="vc_empty_space_inner"></span>
-                                                </div>
+                                            </div>
+                                            <div class="vc_empty_space" style="height: 32px">
+                                                <span class="vc_empty_space_inner"></span>
+                                            </div>
 
-                                                <div class="wpb_single_image wpb_content_element vc_align_center">
-                                                    <div class="wpb_wrapper">
+                                            <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                <div class="wpb_wrapper">
 
-                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="710" height="94" src="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/uploads/2015/04/AIP-BANNER.png" class="vc_single_image-img attachment-large" alt="AIP BANNER"/></div>
-                                                    </div>
+                                                    <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="710" height="94" src="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/uploads/2015/04/AIP-BANNER.png" class="vc_single_image-img attachment-large" alt="AIP BANNER"/></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="vc_row-full-width"></div>
-                                </p>
-                                <div class="container-pad">
-                                    <div id="comments" class="comments-area"></div>
-                                    <!-- #comments .comments-area -->
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-container">
-                    <div id="main-bottom">
-                        <div class="container">
+                                <div class="vc_row-full-width"></div>
+                            </p>
                             <div class="container-pad">
-                                <div class="row-fluid">
-                                    <div class="span3">
-                                        <div id="nav_menu-3" class=" widget box-style-3 widget_nav_menu">
-                                            <div class="module-title">
-                                                <h2 class="title title def_style title-text">
-                                                    Navigation
-                                                </h2>
-                                                <span class="dotted">&nbsp;</span>
-                                            </div>
-                                            <div class="menu-menu-1-container">
-                                                <ul id="menu-menu-3" class="menu">
-                                                    <li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-107 current_page_item menu-item-260">
-                                                        <a href="http://rcenethermofluid2015.ugm.ac.id/">Home</a>
-                                                    </li>
-                                                    <li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-61">
-                                                        <a href="#">Submission</a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62">
-                                                                <a href="http://rcenethermofluid2015.ugm.ac.id/abstract-paper-submission/">Abstract &#038; Paper Submission</a>
-                                                            </li>
-                                                            <li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69">
-                                                                <a href="http://rcenethermofluid2015.ugm.ac.id/submission-guideline/">Submission Guideline</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70">
-                                                        <a href="http://rcenethermofluid2015.ugm.ac.id/registration/">Registration</a>
-                                                    </li>
-                                                    <li id="menu-item-72" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-72">
-                                                        <a href="#">About</a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
-                                                                <a href="http://rcenethermofluid2015.ugm.ac.id/about-conference/">About Conference</a>
-                                                            </li>
-                                                            <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
-                                                                <a href="http://rcenethermofluid2015.ugm.ac.id/about-conference/venue/">Venue</a>
-                                                            </li>
-                                                            <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29">
-                                                                <a href="http://rcenethermofluid2015.ugm.ac.id/about-conference/committee/">Committee</a>
-                                                            </li>
-                                                            <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55">
-                                                                <a href="http://rcenethermofluid2015.ugm.ac.id/about-conference/keynote-speaker/">Keynote Speaker</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li id="menu-item-437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-437">
-                                                        <a href="#">Rundown</a>
-                                                        <ul class="sub-menu">
-                                                            <li id="menu-item-436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-436">
-                                                                <a href="http://rcenethermofluid2015.ugm.ac.id/rundown-parallel-session/">Rundown Parallel Session</a>
-                                                            </li>
-                                                            <li id="menu-item-451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-451">
-                                                                <a href="http://rcenethermofluid2015.ugm.ac.id/rundown/">Schedule</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71">
-                                                        <a href="http://rcenethermofluid2015.ugm.ac.id/contact-us/">Contact Us</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                <div id="comments" class="comments-area"></div>
+                                <!-- #comments .comments-area -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div id="main-bottom">
+                    <div class="container">
+                        <div class="container-pad">
+                            <div class="row-fluid">
+                                <div class="span3">
+                                    <div id="nav_menu-3" class=" widget box-style-3 widget_nav_menu">
+                                        <div class="module-title">
+                                            <h2 class="title title def_style title-text">
+                                                Navigation
+                                            </h2>
+                                            <span class="dotted">&nbsp;</span>
+                                        </div>
+                                        <div class="menu-menu-1-container">
+                                            <ul id="menu-menu-3" class="menu">
+                                                <li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-107 current_page_item menu-item-260">
+                                                    <a href="http://rcenethermofluid2015.ugm.ac.id/">Home</a>
+                                                </li>
+                                                <li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-61">
+                                                    <a href="#">Submission</a>
+                                                    <ul class="sub-menu">
+                                                        <li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62">
+                                                            <a href="http://rcenethermofluid2015.ugm.ac.id/abstract-paper-submission/">Abstract &#038; Paper Submission</a>
+                                                        </li>
+                                                        <li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69">
+                                                            <a href="http://rcenethermofluid2015.ugm.ac.id/submission-guideline/">Submission Guideline</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70">
+                                                    <a href="http://rcenethermofluid2015.ugm.ac.id/registration/">Registration</a>
+                                                </li>
+                                                <li id="menu-item-72" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-72">
+                                                    <a href="#">About</a>
+                                                    <ul class="sub-menu">
+                                                        <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+                                                            <a href="http://rcenethermofluid2015.ugm.ac.id/about-conference/">About Conference</a>
+                                                        </li>
+                                                        <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
+                                                            <a href="http://rcenethermofluid2015.ugm.ac.id/about-conference/venue/">Venue</a>
+                                                        </li>
+                                                        <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29">
+                                                            <a href="http://rcenethermofluid2015.ugm.ac.id/about-conference/committee/">Committee</a>
+                                                        </li>
+                                                        <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55">
+                                                            <a href="http://rcenethermofluid2015.ugm.ac.id/about-conference/keynote-speaker/">Keynote Speaker</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu-item-437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-437">
+                                                    <a href="#">Rundown</a>
+                                                    <ul class="sub-menu">
+                                                        <li id="menu-item-436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-436">
+                                                            <a href="http://rcenethermofluid2015.ugm.ac.id/rundown-parallel-session/">Rundown Parallel Session</a>
+                                                        </li>
+                                                        <li id="menu-item-451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-451">
+                                                            <a href="http://rcenethermofluid2015.ugm.ac.id/rundown/">Schedule</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71">
+                                                    <a href="http://rcenethermofluid2015.ugm.ac.id/contact-us/">Contact Us</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="span3">
-                                        <div id="nav_menu-2" class=" widget box-style-3 widget_nav_menu">
-                                            <div class="module-title">
-												<h2 class="title title def_style title-text">
-                                                    Related Links
-                                                </h2>
-                                                <span class="dotted">&nbsp;</span>
-                                            </div>
-                                            <div class="menu-related-links-container">
-                                                <ul id="menu-related-links" class="menu">
-                                                    <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37">
-                                                        <a href="http://rcmme2015.ugm.ac.id/">RCMME 2015</a>
-                                                    </li>
-                                                    <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38">
-                                                        <a href="http://pstm.ft.ugm.ac.id/">Mechanical Engineering</a>
-                                                    </li>
-                                                    <li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39">
-                                                        <a href="http://ft.ugm.ac.id/">Faculty of Engineering</a>
-                                                    </li>
-                                                    <li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40">
-                                                        <a href="http://ugm.ac.id/">UGM</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                </div>
+                                <div class="span3">
+                                    <div id="nav_menu-2" class=" widget box-style-3 widget_nav_menu">
+                                        <div class="module-title">
+                                            <h2 class="title title def_style title-text">
+                                                Related Links
+                                            </h2>
+                                            <span class="dotted">&nbsp;</span>
+                                        </div>
+                                        <div class="menu-related-links-container">
+                                            <ul id="menu-related-links" class="menu">
+                                                <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37">
+                                                    <a href="http://rcmme2015.ugm.ac.id/">RCMME 2015</a>
+                                                </li>
+                                                <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38">
+                                                    <a href="http://pstm.ft.ugm.ac.id/">Mechanical Engineering</a>
+                                                </li>
+                                                <li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39">
+                                                    <a href="http://ft.ugm.ac.id/">Faculty of Engineering</a>
+                                                </li>
+                                                <li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40">
+                                                    <a href="http://ugm.ac.id/">UGM</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="span3">
-                                        <div id="text-2" class=" widget box-style-3 widget_text">
-                                            <div class="module-title">
-												<h2 class="title title def_style title-text">
-                                                    Contact Us
-                                                </h2>
-                                                <span class="dotted">&nbsp;</span>
-                                            </div>
-                                            <div class="textwidget">
-                                                <p>
-                                                    <i class="fa fa-home"></i>
-                                                    Mechanical Engineering and Industry Department<br/>
-                                                    Universitas Gadjah Mada<br/>
-                                                    Jl. Grafika No. 2, Yogyakarta 55281, Indonesia<br/>
-                                                    <i class="fa fa-envelope"></i>
-                                                    rcenethermofluid2015@ugm.ac.id<br/>
-                                                    <i class="fa fa-fax"></i>
-                                                    +62-274-521673</p>
-                                            </div>
+                                </div>
+                                <div class="span3">
+                                    <div id="text-2" class=" widget box-style-3 widget_text">
+                                        <div class="module-title">
+                                            <h2 class="title title def_style title-text">
+                                                Contact Us
+                                            </h2>
+                                            <span class="dotted">&nbsp;</span>
+                                        </div>
+                                        <div class="textwidget">
+                                            <p>
+                                                <i class="fa fa-home"></i>
+                                                Mechanical Engineering and Industry Department<br/>
+                                                Universitas Gadjah Mada<br/>
+                                                Jl. Grafika No. 2, Yogyakarta 55281, Indonesia<br/>
+                                                <i class="fa fa-envelope"></i>
+                                                rcenethermofluid2015@ugm.ac.id<br/>
+                                                <i class="fa fa-fax"></i>
+                                                +62-274-521673</p>
                                         </div>
                                     </div>
                                 </div>
@@ -813,189 +652,166 @@
                         </div>
                     </div>
                 </div>
-                <footer>
-                    <div class="bg-container">
-                        <div id="copyright">
-                            <div class="container">
-                                <div id="footlogo"></div>
-                                <div class="">
-                                    <div class="textwidget">
-                                        <p>Copyright © 2015 | Department of Mechanical and Industrial Engineering, UGM</p>
-                                    </div>
+            </div>
+            <footer>
+                <div class="bg-container">
+                    <div id="copyright">
+                        <div class="container">
+                            <div id="footlogo"></div>
+                            <div class="">
+                                <div class="textwidget">
+                                    <p>Copyright © 2015 | Department of Electrical and Energy Engineering</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </div>
-        <a href="#top" id="gototop" class="notshow" title="Go to top">
-            <i class="icon-angle-up "></i>
-        </a>
-        <style type='text/css'>
-            .maxbutton-4.maxbutton-photos.maxbutton {
-                position: relative;
-                text-decoration: none;
-                display: inline-block;
-                width: 1111px;
-                border-color: #000;
-                border-top-left-radius: 4px;
-                border-top-right-radius: 4px;
-                border-bottom-left-radius: 4px;
-                border-bottom-right-radius: 4px;
-                border-style: solid;
-                border-width: 1px;
-                background: rgba(24, 92, 163, 1);
-                -pie-background: linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, rgba(24, 92, 163, 1)), color-stop(1, rgba(126, 131, 224, 1)));
-                background: -moz-linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                background: -o-linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                background: linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                -webkit-box-shadow: 0 0 2px #333;
-                -moz-box-shadow: 0 0 2px #333;
-                box-shadow: 0 0 2px #333;
-            }
-            .maxbutton-4.maxbutton-photos.maxbutton:hover {
-                border-color: #0f2557;
-                background: rgba(34, 112, 223, 1);
-                -pie-background: linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, rgba(34, 112, 223, 1)), color-stop(1, rgba(18, 41, 93, 1)));
-                background: -moz-linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                background: -o-linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                background: linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                -webkit-box-shadow: 0 0 2px #333;
-                -moz-box-shadow: 0 0 2px #333;
-                box-shadow: 0 0 2px #333;
-            }
-            .maxbutton-4.maxbutton-photos.maxbutton .mb-text {
-                font-family: Arial;
-                font-size: 16px;
-                text-align: center;
-                font-style: normal;
-                font-weight: normal;
-                padding: 15px 125px;
-                line-height: 1em;
-                box-sizing: border-box;
-                display: block;
-                color: #fff;
-            }
-            .maxbutton-4.maxbutton-photos.maxbutton:hover .mb-text {
-                color: #fff;
-            }
-            .maxbutton-1.maxbutton-schedule.maxbutton {
-                position: relative;
-                text-decoration: none;
-                display: inline-block;
-                border-color: #000;
-                border-top-left-radius: 4px;
-                border-top-right-radius: 4px;
-                border-bottom-left-radius: 4px;
-                border-bottom-right-radius: 4px;
-                border-style: solid;
-                border-width: 1px;
-                background: rgba(24, 92, 163, 1);
-                -pie-background: linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, rgba(24, 92, 163, 1)), color-stop(1, rgba(126, 131, 224, 1)));
-                background: -moz-linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                background: -o-linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                background: linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                -webkit-box-shadow: 0 0 2px #333;
-                -moz-box-shadow: 0 0 2px #333;
-                box-shadow: 0 0 2px #333;
-            }
-            .maxbutton-1.maxbutton-schedule.maxbutton:hover {
-                border-color: #0f2557;
-                background: rgba(34, 112, 223, 1);
-                -pie-background: linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, rgba(34, 112, 223, 1)), color-stop(1, rgba(18, 41, 93, 1)));
-                background: -moz-linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                background: -o-linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                background: linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                -webkit-box-shadow: 0 0 2px #333;
-                -moz-box-shadow: 0 0 2px #333;
-                box-shadow: 0 0 2px #333;
-            }
-            .maxbutton-1.maxbutton-schedule.maxbutton .mb-text {
-                font-family: Arial;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: normal;
-                padding: 15px 150px;
-                line-height: 1em;
-                box-sizing: border-box;
-                display: block;
-                color: #fff;
-            }
-            .maxbutton-1.maxbutton-schedule.maxbutton:hover .mb-text {
-                color: #fff;
-            }
-            .maxbutton-3.maxbutton-schedule-parallel-session.maxbutton {
-                position: relative;
-                text-decoration: none;
-                display: inline-block;
-                border-color: #000;
-                border-top-left-radius: 4px;
-                border-top-right-radius: 4px;
-                border-bottom-left-radius: 4px;
-                border-bottom-right-radius: 4px;
-                border-style: solid;
-                border-width: 1px;
-                background: rgba(24, 92, 163, 1);
-                -pie-background: linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, rgba(24, 92, 163, 1)), color-stop(1, rgba(126, 131, 224, 1)));
-                background: -moz-linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                background: -o-linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                background: linear-gradient(rgba(24, 92, 163, 1) 45%, rgba(126, 131, 224, 1));
-                -webkit-box-shadow: 0 0 2px #333;
-                -moz-box-shadow: 0 0 2px #333;
-                box-shadow: 0 0 2px #333;
-            }
-            .maxbutton-3.maxbutton-schedule-parallel-session.maxbutton:hover {
-                border-color: #0f2557;
-                background: rgba(34, 112, 223, 1);
-                -pie-background: linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, rgba(34, 112, 223, 1)), color-stop(1, rgba(18, 41, 93, 1)));
-                background: -moz-linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                background: -o-linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                background: linear-gradient(rgba(34, 112, 223, 1) 45%, rgba(18, 41, 93, 1));
-                -webkit-box-shadow: 0 0 2px #333;
-                -moz-box-shadow: 0 0 2px #333;
-                box-shadow: 0 0 2px #333;
-            }
-            .maxbutton-3.maxbutton-schedule-parallel-session.maxbutton .mb-text {
-                font-family: Arial;
-                font-size: 16px;
-                text-align: center;
-                font-style: normal;
-                font-weight: normal;
-                padding: 15px 125px;
-                line-height: 1em;
-                box-sizing: border-box;
-                display: block;
-                color: #fff;
-            }
-            .maxbutton-3.maxbutton-schedule-parallel-session.maxbutton:hover .mb-text {
-                color: #fff;
-            }
+    </div>
+    <a href="#top" id="gototop" class="notshow" title="Go to top">
+        <i class="icon-angle-up "></i>
+    </a>
+    <style type='text/css'>
+        .maxbutton-4.maxbutton-photos.maxbutton {
+            position: relative;
+            border-width: 1px;
+            border-style: solid;
+            cursor: pointer;
+            margin: 0;
+            overflow: visible;
+            text-decoration: none !important;
+            text-align: center;
+            text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
+            padding: 0 15px;
+            height: auto;
+            line-height: 32px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: #f6e312;
+            border-color: #e9ac1a;
+            filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=  '#FFF6E312', endColorstr='#FFF9C80D');
+            background-image: -webkit-linear-gradient(top, #f6e312 0%,#f9c80d 100%);
+            background-image: -moz-linear-gradient(top, #f6e312 0%,#f9c80d 100%);
+            background-image: -o-linear-gradient(top, #f6e312 0%,#f9c80d 100%);
+            background-image: linear-gradient(top, #f6e312 0%,#f9c80d 100%);
+            white-space: nowrap;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            zoom: 1;
+            vertical-align: middle;
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        .maxbutton-4.maxbutton-photos.maxbutton:hover {
+            background-color: #eddb11;
+            filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=  '#FFEDDB11', endColorstr='#FFF2B21B');
+            background-image: -webkit-linear-gradient(top, #eddb11 0%,#efcf14 35%,#f1bf18 65%,#f2b21b 100%);
+            background-image: -moz-linear-gradient(top, #eddb11 0%,#efcf14 35%,#f1bf18 65%,#f2b21b 100%);
+            background-image: -o-linear-gradient(top, #eddb11 0%,#efcf14 35%,#f1bf18 65%,#f2b21b 100%);
+            background-image: linear-gradient(top, #eddb11 0%,#efcf14 35%,#f1bf18 65%,#f2b21b 100%);
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+        }
+        .maxbutton-4.maxbutton-photos.maxbutton .mb-text {
+            font-family: Arial;
+            font-size: 16px;
+            text-align: center;
+            font-style: normal;
+            font-weight: bold;
+            padding: 15px 125px;
+            line-height: 1em;
+            box-sizing: border-box;
+            display: block;
+            color: #333;
+        }
+        .maxbutton-1.maxbutton-schedule.maxbutton,
+        .maxbutton-3.maxbutton-schedule-parallel-session.maxbutton {
+            position: relative;
+            border-width: 1px;
+            border-style: solid;
+            cursor: pointer;
+            margin: 0;
+            overflow: visible;
+            text-decoration: none !important;
+            text-align: center;
+            text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
+            padding: 0 15px;
+            height: auto;
+            line-height: 32px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: #f6e312;
+            border-color: #e9ac1a;
+            filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=  '#FFF6E312', endColorstr='#FFF9C80D');
+            background-image: -webkit-linear-gradient(top, #f6e312 0%,#f9c80d 100%);
+            background-image: -moz-linear-gradient(top, #f6e312 0%,#f9c80d 100%);
+            background-image: -o-linear-gradient(top, #f6e312 0%,#f9c80d 100%);
+            background-image: linear-gradient(top, #f6e312 0%,#f9c80d 100%);
+            white-space: nowrap;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            zoom: 1;
+            vertical-align: middle;
+            width: 100%;
+        }
+        .maxbutton-1.maxbutton-schedule.maxbutton:hover,
+        .maxbutton-3.maxbutton-schedule-parallel-session.maxbutton:hover {
+            background-color: #eddb11;
+            filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=  '#FFEDDB11', endColorstr='#FFF2B21B');
+            background-image: -webkit-linear-gradient(top, #eddb11 0%,#efcf14 35%,#f1bf18 65%,#f2b21b 100%);
+            background-image: -moz-linear-gradient(top, #eddb11 0%,#efcf14 35%,#f1bf18 65%,#f2b21b 100%);
+            background-image: -o-linear-gradient(top, #eddb11 0%,#efcf14 35%,#f1bf18 65%,#f2b21b 100%);
+            background-image: linear-gradient(top, #eddb11 0%,#efcf14 35%,#f1bf18 65%,#f2b21b 100%);
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+        }
+        .maxbutton-1.maxbutton-schedule.maxbutton .mb-text,
+        .maxbutton-3.maxbutton-schedule-parallel-session.maxbutton .mb-text {
+            font-family: Arial;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: bold;
+            padding: 15px 150px;
+            line-height: 1em;
+            box-sizing: border-box;
+            display: block;
+            color: #333;
+        }
 
-        </style>
-        <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
-        <script type='text/javascript'>
-            /* <![CDATA[ */
-            var _wpcf7 = {
-                "loaderUrl": "http:\/\/rcenethermofluid2015.ugm.ac.id\/demo\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif",
-                "sending": "Sending ..."
-            };
-            /* ]]> */
-        </script>
-        <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.1.2'></script>
-        <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/bootstrap.min.js?ver=4.1.11'></script>
-        <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/jquery-easing-1.3.js?ver=4.1.11'></script>
-        <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/modernizr.custom.97074.js?ver=4.1.11'></script>
-        <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/jquery.caroufredsel-6.2.1.min.js?ver=4.1.11'></script>
-        <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/template.js?ver=4.1.11'></script>
-        <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js?ver=4.4'></script>
-        <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-includes/js/comment-reply.min.js?ver=4.1.11'></script>
-        <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/plugins/js_composer/assets/js/js_composer_front.js?ver=4.4'></script>
-    </body>
+    </style>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var _wpcf7 = {
+            "loaderUrl": "http:\/\/rcenethermofluid2015.ugm.ac.id\/demo\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif",
+            "sending": "Sending ..."
+        };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/bootstrap.min.js?ver=4.1.11'></script>
+    <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/jquery-easing-1.3.js?ver=4.1.11'></script>
+    <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/modernizr.custom.97074.js?ver=4.1.11'></script>
+    <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/jquery.caroufredsel-6.2.1.min.js?ver=4.1.11'></script>
+    <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/template.js?ver=4.1.11'></script>
+    <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js?ver=4.4'></script>
+    <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-includes/js/comment-reply.min.js?ver=4.1.11'></script>
+    <script type='text/javascript' src='http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/plugins/js_composer/assets/js/js_composer_front.js?ver=4.4'></script>
+</body>
 </html>

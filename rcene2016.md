@@ -8,13 +8,6 @@ redirect_from: "/rcene-2016/"
 
 ## Call for Papers
 
-### Important Dates
-
-- 03rd June 2016: Extended abstract submission deadline
-- 4th July 2016: Paper acceptance notification
-- 2nd September 2016: Full paper submission deadline
-- 24-25th November 2016: Conference dates:
-
 ---
 
 #### Honorary Chairs
@@ -78,5 +71,3 @@ All accepted and presented papers will be published in the conference proceeding
 ---
 
 For more information, please refer to the conference website: [www.rceeconference.org](www.rceeconference.org)
-
----
