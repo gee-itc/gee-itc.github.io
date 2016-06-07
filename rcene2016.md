@@ -1,14 +1,10 @@
 ---
 layout: rcene_layout
 title: RCENE 2016
-permalink: /RCENE-2016/
-redirect_from: "/rcene-2016/"
+permalink: /rcene-2016/
+redirect_from: "/RCENE-2016/"
 ---
 
-
-## Call for Papers
-
----
 
 ### Honorary Chairs
 
