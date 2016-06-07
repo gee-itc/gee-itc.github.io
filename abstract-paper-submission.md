@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: rcene_layout
 title: Abstract & Paper Submission
 permalink: /rcene-2016/abstract-paper-submission/
 ---

@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: rcene_layout
 title: Submission Guideline
 permalink: /rcene-2016/submission-guideline/
 ---
