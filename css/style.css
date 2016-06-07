@@ -351,7 +351,7 @@ header {
 .home #wrapper {
     left: 0;
     position: absolute;
-    top: -100px;
+    top: -5px;
 }
 .home #body-main-body {}
 .body-top, #main-body, #body-bottom, #main-bottom {
