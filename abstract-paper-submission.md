@@ -1,7 +1,7 @@
 ---
-layout: landing_page
-title: Submission
-permalink: /submission/
+layout: landing
+title: Abstract & Paper Submission
+permalink: /rcene-2016/abstract-paper-submission/
 ---
 
 ## Regular Paper Submission
