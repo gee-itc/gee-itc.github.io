@@ -60,3 +60,7 @@ Topics of interest include, but are not limited to:
 #### Co-organized by:
 
 - SEE Forum
+
+#### Supported by:
+
+- AUN/SEED-Net
