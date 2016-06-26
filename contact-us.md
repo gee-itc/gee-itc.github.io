@@ -10,9 +10,9 @@ permalink: /contact-us/
    Department of Electrical and Energy Engineering  
    PO Box 86, Russian Conf. Blvd. Phnom Penh, Cambodia.  
 
-  - **Email:** info@itc.edu.kh  
+  - **Email:** [info@itc.edu.kh](info@itc.edu.kh)  
   - **Tel:** +855 23 880 370 / 982 404  
-  - **Website:** www.itc.edu.kh  
+  - **Website:** [www.itc.edu.kh](www.itc.edu.kh)  
 
 
 #### Conference:
@@ -23,13 +23,13 @@ permalink: /contact-us/
 
 ##### Dr. Long Bun
 
-  - **Email:** bunlong@itc.edu.kh  
-  - **H/P:** +855 95222776  
+  - **Email:** [bunlong@itc.edu.kh](bunlong@itc.edu.kh)  
+  - **H/P:** +855 95 222 776  
 
 
 #### Communication:
 
 ##### Mr. Chanthan Hel
 
-  - **Email:** chanthan@itc.edu.kh  
-  - **H/P:** +855 10847011  
+  - **Email:** [chanthan@itc.edu.kh](chanthan@itc.edu.kh)  
+  - **H/P:** +855 10 847 011  
