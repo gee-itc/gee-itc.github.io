@@ -4,7 +4,7 @@ title: Abstract & Paper Submission
 permalink: /rcene-2016/abstract-paper-submission/
 ---
 
-Instructions for Authors
+#### Instructions for Authors
 
 Authors are required to submit their abstracts first for consideration. After reviewing by the committee, authors will be notified of acceptance and will be asked to develop full paper for submission prior to the conference date.
 
@@ -20,11 +20,12 @@ Full paper template can be found here:
 
 - [Full Paper Template](http://gee-itc.github.io/uploads/Full_Paper_Template.doc)
 
+
 #### Paper Submission
 
 Technical papers must be submitted via conference email. Only PDF files will be accepted for the review process.
 
-rcene2016itc@gmail.com
+Conference E-mail: [rcene2016itc@gmail.com](mailto:rcene2016itc@gmail.com)
 
 Submitted abstracts and papers should be named as the sample below:
 
