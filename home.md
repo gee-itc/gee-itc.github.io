@@ -2,6 +2,7 @@
 layout: rcene_layout
 title: RCEnE 2016
 permalink: /
+tags: [RCEnE, RCEnE 2016, RCEnE 2016 Conference, EEE Department of ITC]
 ---
 
 #### The Regional Conference on Energy Engineering
