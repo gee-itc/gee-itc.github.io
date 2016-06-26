@@ -56,7 +56,3 @@ Authors are invited to submit manuscripts that present original unpublished rese
 #### Co-organized by:
 
 - SEE Forum
-
----
-
-For more information, please refer to the conference website: [www.rceeconference.org](www.rceeconference.org)
