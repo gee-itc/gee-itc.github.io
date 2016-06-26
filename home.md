@@ -9,11 +9,11 @@ The Department of Electrical and Energy Engineering of Institute of Technology o
 ## Publication of Works
 All accepted and presented papers will be published in the conference proceedings. All authors whose paper is accepted will be encouraged to extend the paper to be published in ASEAN Engineering Journal (published by AUN/SEED-Net).
 
-### Honorary Chairs
+#### Honorary Chairs
 
-#### H.E Dr. Romny Om, ITC, Cambodia
+- H.E Dr. Romny Om, ITC, Cambodia
 
-### Steering Committees
+#### Steering Committees
 - Prof. Ohgaki Hideaki, Kyoto, Japan
 - Prof. Ishihara Keiichi, Kyoto, Japan
 - Prof. Tanimoto Jun, Kyushu, Japan
@@ -35,9 +35,10 @@ All accepted and presented papers will be published in the conference proceeding
 
 ### Organized by:
 
-####  Institute of Technology of Cambodia
+- Institute of Technology of Cambodia
 
 ### Co-organized by:
+- SEE Forum
 ---
 
 For more information, please refer to the conference website: [www.rceeconference.org](www.rceeconference.org)
