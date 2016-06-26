@@ -1,7 +1,7 @@
 ---
 layout: rcene_layout
 title: Abstract & Paper Submission
-permalink: /rcene-2016/abstract-paper-submission/
+permalink: /rcene-2016/submission/
 ---
 
 #### Instructions for Authors
