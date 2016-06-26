@@ -6,12 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: GEE Department of ITC
+title: >
+  The Department of Electrical and Energy Engineering of
+  Institute of Technology of Cambodia(ITC)
 email: oemdaro@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The Department of Electrical and Energy Engineering of
+  Institute of Technology of Cambodia(ITC) in collaboration with AUN/SEED-NET
+  and JICA proudly present the 2016 Regional Conference on Energy Engineering
+  (RCEnE 2016).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://gee-itc.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
