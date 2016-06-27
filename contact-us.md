@@ -1,5 +1,5 @@
 ---
-layout: rcene_layout
+layout: rcene_page
 title: Contact Us
 permalink: /contact-us/
 ---
