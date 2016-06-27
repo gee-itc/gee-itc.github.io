@@ -9,7 +9,8 @@ tags: [RCEnE, RCEnE 2016, RCEnE 2016 Conference, Regional Conference on Energy E
 
 The Department of Electrical and Energy Engineering of Institute of Technology of Cambodia(ITC) in collaboration with AUN/SEED-NET and JICA proudly present the 2016 Regional Conference on Energy Engineering (RCEnE 2016). RCEnE provides a global platform to bring together researchers, scientists, academics, policy makers and professionals to exchange information and identify research needs in the areas of energy engineering and enhancing culture of sharing of a wealth of knowledges and information in both fundamental and applied sciences.
 
-**RCEnE 2016** is the Regional Conference on Energy Engineering supported by JICA Project on AUN/SEED-Net. This regional conference is intended as a Regional Forum in ASEAN Region for academicians, engineers, researchers and professionals from industry to discuss their research results, innovative knowledges, and breakthroughs in Energy Engineering Technology.  
+**RCEnE 2016** is the Regional Conference on Energy Engineering supported by JICA Project on AUN/SEED-Net. This regional conference is intended as a Regional Forum in ASEAN Region for academicians, engineers, researchers and professionals from industry to discuss their research results, innovative knowledges, and breakthroughs in Energy Engineering Technology.
+
 Authors are invited to submit manuscripts that present original unpublished research in all areas of Energy Engineer¬ing. Prospective authors are encouraged to submit full papers for review. Only original papers that have not been published or submitted for publication elsewhere will be considered.
 
 #### Conference Themes
