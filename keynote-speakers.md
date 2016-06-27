@@ -7,7 +7,7 @@ permalink: /rcene-2016/keynote-speakers/
 ## Page under construction!
 <div class="group keynote_speaker_list">
   <a class="photo" href="http://www.rsaconference.com/events/us16/speakers/michael-a-brown?webSyncID=9a0cd976-7857-0065-e1a9-94972b71e3a9&amp;sessionGUID=5782bde2-e29e-2099-87a2-cac45c507d16&amp;_ga=1.61118699.699589316.1467026608">
-	 <img src="Keynotes%20-%20Security%20Experts%20%7C%20RSA%20Conference%202016_files/Wcc53G9dcFUEupmoG6ykLa4OUroEXY.jpg" alt="Michael A. Brown">
+	 <img src="/images/rcene-2016/boy-512.png" alt="Michael A. Brown">
    </a>
   <div class="dossier">
     <div class="bio">
