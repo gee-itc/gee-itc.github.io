@@ -1,7 +1,7 @@
 ---
 layout: rcene_layout
 title: RCEnE 2016
-permalink: /
+permalink: /rcene-2016/
 tags: [RCEnE, RCEnE 2016, RCEnE 2016 Conference, Regional Conference on Energy Engineering 2016, EEE Department of ITC]
 ---
 
