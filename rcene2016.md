@@ -2,7 +2,9 @@
 layout: rcene_layout
 title: Regional Conference on Energy Engineering 2016
 permalink: /rcene-2016/
-redirect_from: "/RCENE-2016/"
+redirect_from:
+  - "/RCENE-2016/"
+  - "/"
 tags: [RCEnE, RCEnE 2016, RCEnE 2016 Conference, Regional Conference on Energy Engineering 2016]
 ---
 
