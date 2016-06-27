@@ -42,7 +42,7 @@ permalink: /rcene-2016/keynote-speakers/
   										          March 3, 2016 | 2:30 PM | South | Room: Live at Esplanade Ballroom											
                       </div>
   										<div class="role">
-                        <img src="Keynotes%20-%20Security%20Experts%20%7C%20RSA%20Conference%202016_files/speaker.png">
+                        <img src="/images/rcene-2016/speaker.png">
                         Speaker
                       </div>
   									</li>
