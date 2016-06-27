@@ -29,6 +29,6 @@ Conference E-mail: [rcene2016itc@gmail.com](mailto:rcene2016itc@gmail.com)
 
 Submitted abstracts and papers should be named as the sample below:
 
-For abstract: RCENE2016_Abstract_FamilyName
+- For abstract: ** RCENE2016_Abstract_FamilyName **
 
-For paper: RCENE2016_Paper_FamilyName
+- For paper: ** RCENE2016_Paper_FamilyName **
