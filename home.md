@@ -40,8 +40,8 @@ Topics of interest include, but are not limited to:
 - Prof. Ohgaki Hideaki, Kyoto, Japan
 - Prof. Ishihara Keiichi, Kyoto, Japan
 - Prof. Tanimoto Jun, Kyushu, Japan
+- Dr. Iman K. Reksowardojo, ITB, Indonesia
 - Prof. Zainal Alimuddin b. Zainal Alauddin, USM, Malaysia
-- Dr. Iman Reksowardojo, ITB, Indonesia
 - Dr. Chaiwat Nuthong, KMITL, Thailand
 - Dr. Bun Long, ITC, Cambodia
 
