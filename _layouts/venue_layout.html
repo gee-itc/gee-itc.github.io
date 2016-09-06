@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html class="ie ie7" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" > <![endif]-->
+<!--[if IE 8]> <html class="ie ie8" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" > <![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        {% if page.title %}{{ page.title }} {% else %}{{ site.title }}{% endif %}
+    </title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="shortcut icon" href="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/uploads/2015/04/favicon1.png">
+    <!--[if lt IE 9]> <script src="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/js/html5.js" type="text/javascript"></script> <![endif]-->
+    <script type="text/javascript">
+        var is_isotope = false;
+        is_isotope = true;
+    </script>
+    <style type="text/css">
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+            /* Retina Logo */
+            .logo {
+                background: url("/images/logo.png") no-repeat center;
+                display: inline-block !important;
+                background-size: contain;
+            }
+            .logo img {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .logo * {
+                display: inline-block;
+            }
+        }
+    </style>
+
+    <!-- start SEO -->
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="keywords" content="{{ page.tags }}" />
+    <meta property='og:locale' content='en_US' />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}">
+    <!-- endSEO -->
+
+    <link rel='stylesheet' id='mbpro-font-awesome-css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' type='text/css' media='all' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' id='bootstrap-css' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-responsive-css' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/css/bootstrap-responsive.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='gameplan-style-css' href='{{ "/css/style.css" | prepend: site.baseurl }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='gameplan-style-css' href='{{ "/css/ieeebootstrap.css" | prepend: site.baseurl }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='icon-effect-css' href='{{ "/css/icon-effect.css" | prepend: site.baseurl }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='{{ "/css/js_composer.css" | prepend: site.baseurl }}' type='text/css' media='all' />
+    <style type="text/css">
+        #gototop:before {
+            content: "\f062";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            text-align: centre;
+            /*--adjust as necessary--*/
+            color: #fff;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+            left: 10px;
+        }
+
+        /*#page-header .bg-container {
+            background-size: contain !important;
+        }*/
+
+        h2 span {
+            font-style: normal !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-style: normal !important;
+        }
+
+        header #navigation .menu> li> a {
+            font-style: normal !important;
+        }
+
+        .widget ul li {
+            list-style: none;
+            color: #323232;
+        }
+
+        .widget ul li a {
+            color: #323232;
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+        }
+
+        .widget ul li a:hover {
+            color: #3B56A4;
+        }
+
+        .widget ul li:before {
+            color: #323232;
+            content: "\f105";
+            display: inline-block;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 8px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        .container-pad h1 {
+            display: none;
+        }
+
+        .navbar .nav {
+            margin: 0;
+        }
+
+        .navbar-default .navbar-collapse {
+            border-bottom: 2px solid #CCC;
+        }
+
+        #page-header .bg-container {
+            background: #fff url("/images/rcene-banner.jpg") center 0 no-repeat;
+            height: 100%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js" integrity="sha256-SOuLUArmo4YXtXONKz+uxIGSKneCJG4x0nVcA0pFzV0=" crossorigin="anonymous"></script>
+    <!--[if IE 8]> <link rel="stylesheet" type="text/css" href="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"> <![endif]-->
+    <!--[if lte IE 9]> <link rel="stylesheet" type="text/css" href="http://rcenethermofluid2015.ugm.ac.id/demo/wp-content/themes/gameplan/css/ie.css" /> <![endif]-->
+</head>
+
+<body class="home page page-id-107 page-template page-template-page-templates page-template-full-width page-template-page-templatesfull-width-php light wide noslider full-width custom-background-empty single-author wpb-js-composer js-comp-ver-4.4 vc_responsive tribe-theme-gameplan page-template-full-width-php">
+    <a name="top" style="height:0; position:absolute; top:0;"></a>
+    <div class="clear"></div>
+    <header>
+        <div id="page-header" class="no-subheading">
+            <div class="bg-container">
+                <div class="container-pad">
+                    <h1>Home&nbsp;</h1>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="clear"></div>
+    <nav class="navbar-wrapper">
+        <div class="navbar navbar-default" role="navigation" style="background: #fff;">
+            <div class="container" style="width: 1012px;">
+                <div class="navbar-collapse">
+                    <ul id="menu-top-menu" class="nav navbar-nav">
+                        <li id="menu-item-1816" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1816"><a href="/">Home</a></li>
+                        <li id="menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1822"><a href="/rcene-2016/submission/">Submission</a></li>
+                        <li id="menu-item-1818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1818"><a href="/rcene-2016/keynote-speakers/">Keynote</a></li>
+                        <li id="menu-item-2070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2070"><a href="/rcene-2016/program/">Program</a></li>
+                        <li id="menu-item-2065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2065"><a href="/rcene-2016/venue/">Venue</a></li>
+                        <li id="menu-item-1817" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1817"><a href="/contact-us/">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="clear"></div>
+    <div id="body">
+        <div id="wrapper">
+            <div class="bg-container single-post-body ">
+                <div class="body-top-color">
+                    <!---->
+                </div>
+                <div class="background-color">
+                    <!---->
+                </div>
+                <div class="container">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="vc_row wpb_row vc_row-fluid">
+                                <div class="vc_col-sm-12 wpb_column vc_column_container ">
+                                    <div class="wpb_wrapper">
+                                        <div class="vc_empty_space" style="height: 32px">
+                                            <span class="vc_empty_space_inner"></span>
+                                        </div>
+                                        <div class="vc_row-full-width"></div>
+                                        <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                            <div class="vc_col-sm-7 wpb_column vc_column_container ">
+                                                <div class="wpb_wrapper">
+
+                                                    <div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_appear">
+                                                        <div class="wpb_wrapper">
+                                                            <h1>{{ page.title }}</h1>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                                <span class="vc_sep_line"></span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                                <span class="vc_sep_line"></span>
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="vc_empty_space" style="height: 32px">
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_appear">
+                                                        <div class="wpb_wrapper">
+                                                            {{ content }}
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 32px">
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+
+                                                    <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                                <span class="vc_sep_line"></span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                                <span class="vc_sep_line"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="vc_col-sm-5 wpb_column vc_column_container ">
+                                                <div class="wpb_wrapper">
+
+                                                    <div class="wpb_text_column wpb_content_element  wpb_animate_when_almost_visible wpb_appear">
+                                                        <div class="wpb_wrapper">
+                                                            <img src="/images/Hotel-Exterior-min.jpg" alt="Sunway Hotel Phnom Penh">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="vc_empty_space" style="height: 60px">
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+
+                                                    <div class="wpb_content_element  wpb_appear wpb_animate_when_almost_visible not-column-inherit">
+                                                        <div class="wpb_wrapper wpb_accordion_wrapper ui-helper-reset ui-accordion boxed timeline-list">
+                                                            <h4>Tourism Website</h4>
+                                                            <ul>
+                                                                <li><a href="http://www.tourismcambodia.org/" target="_blank"><h5>Ministry of Tourism</h5></a></li>
+                                                                <li><a href="http://www.tourismcambodia.com/" target="_blank"><h5>tourismcambodia.com</h5></a></li>
+                                                                <li><a href="http://www.siemreap.me/" target="_blank"><h5>Siem Reap Province</h5></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 32px">
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p font-size="12"></p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vc_row-full-width"></div>
+                                        <div class="vc_empty_space" style="height: 32px">
+                                            <span class="vc_empty_space_inner"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row-full-width"></div>
+                            </p>
+                            <div class="container-pad">
+                                <div id="comments" class="comments-area"></div>
+                                <!-- #comments .comments-area -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div id="main-bottom">
+                    <div class="container">
+                        <div class="container-pad">
+                            <div class="row-fluid">
+                                <div class="span3">
+                                    <div id="nav_menu-3" class=" widget box-style-3 widget_nav_menu">
+                                        <div class="module-title">
+                                            <h2 class="title title def_style title-text">
+                                                Navigation
+                                            </h2>
+                                            <span class="dotted">&nbsp;</span>
+                                        </div>
+                                        <div class="menu-menu-1-container">
+                                            <ul id="menu-menu-3" class="menu">
+                                                <li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-107 current_page_item menu-item-260">
+                                                    <a href="/">Home</a>
+                                                </li>
+                                                <li id="menu-item-270" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-107 current_page_item menu-item-260">
+                                                    <a href="/rcene-2016/">RCENE</a>
+                                                </li>
+                                                <li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-61">
+                                                    <a href="/rcene-2016/submission/">Submission</a>
+                                                </li>
+                                                <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70">
+                                                    <a href="/rcene-2016/keynote-speakers/">Keynote</a>
+                                                </li>
+                                                <li id="menu-item-72" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-72">
+                                                    <a href="/rcene-2016/program/">Program</a>
+                                                </li>
+                                                <li id="menu-item-437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent menu-item-437">
+                                                    <a href="/rcene-2016/venue/">Venue</a>
+                                                </li>
+                                                <li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71">
+                                                    <a href="/contact-us/">Contact Us</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div id="nav_menu-2" class=" widget box-style-3 widget_nav_menu">
+                                        <div class="module-title">
+                                            <h2 class="title title def_style title-text">
+                                                Related Links
+                                            </h2>
+                                            <span class="dotted">&nbsp;</span>
+                                        </div>
+                                        <div class="menu-related-links-container">
+                                            <ul id="menu-related-links" class="menu">
+                                                <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37">
+                                                    <a href="http://www.itc.edu.kh/en/">ITC Home</a>
+                                                </li>
+                                                <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38">
+                                                    <a href="http://www.itc.edu.kh/gee">EEE Department</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div id="text-2" class=" widget box-style-3 widget_text">
+                                        <div class="module-title">
+                                            <h2 class="title title def_style title-text">
+                                                Contact Us
+                                            </h2>
+                                            <span class="dotted">&nbsp;</span>
+                                        </div>
+                                        <div class="textwidget">
+                                            <p>
+                                                <i class="fa fa-home"></i> EEE Department
+                                                <br/> Institute of Technology of Cambodia
+                                                <br/> PO Box 86, Russian Conf. Blvd. Phnom Penh, Cambodia.
+                                                <br/>
+                                                <i class="fa fa-envelope"></i>
+                                                <a href="mailto:rcene2016itc@gmail.com" target="_top">rcene2016itc@gmail.com</a>
+                                                <br/>
+                                                <i class="fa fa-phone"></i> +855 23 880 370 / 982 404</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="bg-container">
+                    <div id="copyright">
+                        <div class="container">
+                            <div id="footlogo"></div>
+                            <div class="">
+                                <div class="textwidget">
+                                    <p>Copyright © 2015 | Department of Electrical and Energy Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <a href="#top" id="gototop" class="notshow" title="Go to top">
+        <i class="icon-angle-up "></i>
+    </a>
+    <style type='text/css'>
+        .maxbutton-4.maxbutton-photos.maxbutton {
+            position: relative;
+            border-width: 1px;
+            border-style: solid;
+            cursor: pointer;
+            margin: 0;
+            overflow: visible;
+            text-decoration: none !important;
+            text-align: center;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
+            padding: 0 15px;
+            height: auto;
+            line-height: 32px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: #FF3D00;
+            border-color: #F4511E;
+            filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF6E312', endColorstr='#FFF9C80D');
+            background-image: -webkit-linear-gradient(top, #FF3D00 0%, #FF5722 100%);
+            background-image: -moz-linear-gradient(top, #FF3D00 0%, #FF5722 100%);
+            background-image: -o-linear-gradient(top, #FF3D00 0%, #FF5722 100%);
+            background-image: linear-gradient(top, #FF3D00 0%, #FF5722 100%);
+            white-space: nowrap;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            zoom: 1;
+            vertical-align: middle;
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+
+        .maxbutton-4.maxbutton-photos.maxbutton:hover {
+            background-color: #D84315;
+            filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFEDDB11', endColorstr='#FFF2B21B');
+            background-image: -webkit-linear-gradient(top, #D84315 0%, #E64A19 35%, #F4511E 65%, #FF5722 100%);
+            background-image: -moz-linear-gradient(top, #D84315 0%, #E64A19 35%, #F4511E 65%, #FF5722 100%);
+            background-image: -o-linear-gradient(top, #D84315 0%, #E64A19 35%, #F4511E 65%, #FF5722 100%);
+            background-image: linear-gradient(top, #D84315 0%, #E64A19 35%, #F4511E 65%, #FF5722 100%);
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        .maxbutton-4.maxbutton-photos.maxbutton .mb-text {
+            font-family: Arial;
+            font-size: 16px;
+            text-align: center;
+            font-style: normal;
+            font-weight: bold;
+            padding: 15px 125px;
+            line-height: 1em;
+            box-sizing: border-box;
+            display: block;
+            color: #FFF;
+        }
+
+        .maxbutton-1.maxbutton-schedule.maxbutton,
+        .maxbutton-3.maxbutton-schedule-parallel-session.maxbutton {
+            position: relative;
+            border-width: 1px;
+            border-style: solid;
+            cursor: pointer;
+            margin: 0;
+            overflow: visible;
+            text-decoration: none !important;
+            text-align: center;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
+            padding: 0 15px;
+            height: auto;
+            line-height: 32px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: #FF3D00;
+            border-color: #F4511E;
+            filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF6E312', endColorstr='#FFF9C80D');
+            background-image: -webkit-linear-gradient(top, #FF3D00 0%, #FF5722 100%);
+            background-image: -moz-linear-gradient(top, #FF3D00 0%, #FF5722 100%);
+            background-image: -o-linear-gradient(top, #FF3D00 0%, #FF5722 100%);
+            background-image: linear-gradient(top, #FF3D00 0%, #FF5722 100%);
+            white-space: nowrap;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: middle;
+            zoom: 1;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .maxbutton-1.maxbutton-schedule.maxbutton:hover,
+        .maxbutton-3.maxbutton-schedule-parallel-session.maxbutton:hover {
+            background-color: #D84315;
+            filter: progid: DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFEDDB11', endColorstr='#FFF2B21B');
+            background-image: -webkit-linear-gradient(top, #D84315 0%, #E64A19 35%, #F4511E 65%, #FF5722 100%);
+            background-image: -moz-linear-gradient(top, #D84315 0%, #E64A19 35%, #F4511E 65%, #FF5722 100%);
+            background-image: -o-linear-gradient(top, #D84315 0%, #E64A19 35%, #F4511E 65%, #FF5722 100%);
+            background-image: linear-gradient(top, #D84315 0%, #E64A19 35%, #F4511E 65%, #FF5722 100%);
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        .maxbutton-1.maxbutton-schedule.maxbutton .mb-text,
+        .maxbutton-3.maxbutton-schedule-parallel-session.maxbutton .mb-text {
+            font-family: Arial;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: bold;
+            padding: 15px 150px;
+            line-height: 1em;
+            box-sizing: border-box;
+            display: block;
+            color: #FFF;
+        }
+    </style>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.1.1/bootstrap.min.js'></script>
+    <script type='text/javascript' src='{{ "/js/jquery-easing-1.3.js" | prepend: site.baseurl }}'></script>
+    <script type='text/javascript' src='{{ "/js/modernizr.custom.97074.js" | prepend: site.baseurl }}'></script>
+    <script type='text/javascript' src='{{ "/js/template.js" | prepend: site.baseurl }}'></script>
+    <script type='text/javascript' src='{{ "/js/waypoints.min.js" | prepend: site.baseurl }}'></script>
+    <script type='text/javascript' src='{{ "/js/js_composer_front.js" | prepend: site.baseurl }}'></script>
+</body>
+
+</html>
